@@ -1,7 +1,7 @@
 import React, { createContext } from 'react';
 import { io } from 'socket.io-client';
 
-const socket = io('http://localhost:8900'),
+const socket = io('https://socket-chat-delta.vercel.app'),
     SocketContext = createContext(socket);
 
 socket.on('connect', () => console.log('connected to socket'));
